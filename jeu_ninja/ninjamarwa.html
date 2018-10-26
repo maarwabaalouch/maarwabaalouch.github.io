@@ -1,0 +1,100 @@
+		<!DOCTYPE html>
+		 <head>
+		  <title>Hello World avec jQuery</title>
+		  <meta charset=iso-8859-1" /> <script " src="jquery.js"></script>
+		 <script> $(document).ready(function(){
+    $("img").hide();
+    $(".im0").show();
+    $(".im0").click(function(){
+
+   	$(this).hide();
+    var d=$(this).next("img");
+     d.show();
+
+   	if(d.prop("class")=="im1")
+   	{
+   	   		var s=eval($("#score").val());
+
+   	   		$("#score").val(eval(s+1));
+   	}
+
+
+   	if(document.formulaire.score.value=="3"){
+   		alert("felicitation",5000)};
+
+ });
+
+
+    });
+
+
+
+   </script>
+		  	</head>
+		  	<body>
+		  	<center>
+
+		  	<form name="formulaire">
+		  	  <input type="text" style="width: 50px" value="0" name="score" id="score">
+
+	          <input type="button" value="Play" id="p" style="height:20px;width:100px">
+
+		  	  <table border=1>
+
+			  	<tr>
+			  		<td>
+			  		<img src="image/e11.png" class="im0"   id="1" style="height:150px;width:150px">
+			  		<img src="image/winnersMf.jpg"  id="2" style="height:150px;width:150px">
+
+			  		</td>
+				  	<td>
+				  	<img src="image/e11.png" class="im0" id="1" style="height:150px;width:150px">
+				  	<img src="image/winnersM.jpg" class="im1" id="2" style="height:150px;width:150px">
+
+				  	</td>
+				  	<td>
+				  	<img src="image/e11.png" class="im0" id="1" style="height:150px;width:150px">
+				  	<img src="image/winnersMf.jpg"  id="2" style="height:150px;width:150px">
+
+				  	</td>
+			    </tr>
+			  	<tr>
+			  	    <td>
+				  	<img src="image/e11.png" class="im0" id="1" style="height:150px;width:150px">
+				  	<img src="image/winnersM.jpg" class="im1" id="2" style="height:150px;width:150px">
+
+				  	</td>
+				  	<td>
+				  	<img src="image/e11.png" class="im0" id="1" style="height:150px;width:150px">
+				  	<img src="image/winnersMf.jpg"  id="2" style="height:150px;width:150px">
+
+				  	</td>
+				  	<td>
+				  	<img src="image/e11.png" class="im0" id="1" style="height:150px;width:150px">
+				  	<img src="image/winnersMf.jpg"  id="2" style="height:150px;width:150px">
+
+				  	</td>
+			    </tr>
+			    <tr>
+				  	<td>
+				  	<img src="image/e11.png" class="im0" id="1" style="height:150px;width:150px">
+				  	<img src="image/winnersMf.jpg"  id="2" style="height:150px;width:150px">
+
+				  	</td>
+				  	<td>
+				  	<img src="image/e11.png" class="im0" id="1" style="height:150px;width:150px">
+				  	<img src="image/winnersM.jpg" class="im1" id="2" style="height:150px;width:150px">
+
+				  	</td>
+				  	<td>
+				  	<img src="image/e11.png" class="im0" id="1" style="height:150px;width:150px">
+				  	<img src="image/winnersMf.jpg"  id="2" style="height:150px;width:150px">
+
+				  	</td>
+			    </tr>
+		    </table>
+
+        </form>
+    </center>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<title>keypad</title>
+<meta charset=UTF-8></meta>
+<meta name="keypad"
+content="Introduction au langage HTML">
+</meta>
+<script >
+function numéro(num)
+{
+
+	if (ex.champ.value=="0")
+	{
+		ex.champ.value=num;
+	}
+	else {ex.champ.value=ex.champ.value+num;}
+}
+function opérande(op)
+{
+
+ {ex.champ.value+=op;}
+
+
+
+}
+function efface()
+{ex.champ.value="0";}
+function resultat()
+{var res ;
+res=eval(ex.champ.value);
+ex.champ.value=res;}
+
+
+
+
+</script>
+</head>
+<body>
+	<form name="ex" action="">
+			  <input  name="champ" value=0 style="height:20px ; width:410px" id="pseudo" />
+
+		<TABLE >
+			<TR>
+<TD><INPUT TYPE="Button" NAME= "t1" VALUE="1"style="height:20 px;width:100px" onclick ="numéro(1)"></TD>
+<TD><INPUT TYPE="Button" NAME= "t2" VALUE="2"style="height:20 px;width:100px" onclick="numéro(2)"></TD>
+<TD><INPUT TYPE="Button" NAME= "t3" VALUE="3"style="height:20 px;width:100px" onclick="numéro(3)"></TD>
+<TD><INPUT TYPE="Button" NAME= "t+" VALUE="+"style="height:20 px;width:100px" onclick="opérande('+')"></TD>
+
+</TR>
+<TR>
+<TD><INPUT TYPE="Button" NAME= "t4" VALUE="4" style="height:20 px;width:100px" onclick="numéro(4)"></TD>
+<TD><INPUT TYPE="Button" NAME= "t5" VALUE="5" style="height:20 px;width:100px" onclick="numéro(5)"></TD>
+<TD><INPUT TYPE="Button" NAME= "t6" VALUE="6" style="height:20 px;width:100px" onclick="numéro(6)"></TD>
+<TD><INPUT TYPE="Button" NAME= "t-" VALUE="-" style="height:20 px;width:100px" onclick="opérande('-')"></TD>
+
+</TR>
+<TR>
+<TD><INPUT TYPE="Button" NAME= "t7" VALUE="7" style="height:20 px;width:100px" onclick="numéro(7)"></TD>
+<TD><INPUT TYPE="Button" NAME= "t8" VALUE="8" style="height:20 px;width:100px"onclick="numéro(8)"></TD>
+<TD><INPUT TYPE="Button" NAME= "t9" VALUE="9" style="height:20 px;width:100px" onclick="numéro(9)"></TD>
+<TD><INPUT TYPE="Button" NAME= "t*" VALUE="*" style="height:20 px;width:100px" onclick="opérande('*')"></TD>
+
+</TR>
+<TR>
+<TD><INPUT TYPE="Button" NAME= "rien" VALUE="" style="height:20 px;width:100px"></TD>
+<TD><INPUT TYPE="Button" NAME= "t0" VALUE="0" style="height:20 px;width:100px"onclick="numéro(0)"></TD>
+<TD><INPUT TYPE="Button" NAME= "tc" VALUE="C" style="height:20 px;width:100px"onclick="effacer()"></TD>
+<TD><INPUT TYPE="Button" NAME= "t=" VALUE="=" style="height:20 px;width:100px"onclick="resultat()"></TD>
+
+</TR>
+
+
+</table>
+</body>
+</html>
